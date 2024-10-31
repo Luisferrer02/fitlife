@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+/* Estilos generales del formulario */
+form {
+  max-width: 600px; /* Ancho máximo del formulario */
+  margin: 20px auto; /* Centrado horizontal y margen superior */
+  padding: 20px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde ligero */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Fondo claro */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Encabezados del formulario */
+h2 {
+  text-align: center; /* Centrado del texto */
+  margin-bottom: 20px; /* Espacio inferior */
+  color: #333; /* Color del texto */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  color: #555; /* Color de los subtítulos */
+  margin-top: 20px; /* Espacio superior */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Estilos de los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  margin: 10px 0; /* Margen vertical */
+  border: 1px solid #ccc; /* Borde ligero */
+  border-radius: 4px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilo de los checkboxes y radios */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px; /* Espacio a la derecha */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos para las etiquetas */
+label {
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para mensajes de error */
+.error {
+  color: red; /* Color rojo para errores */
+  font-size: 0.9em; /* Tamaño de fuente más pequeño */
+  margin-top: -10px; /* Espacio negativo para acercar al campo */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos del botón de envío */
+button {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  background-color: #28a745; /* Color de fondo verde */
+  color: white; /* Color del texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a pointer */
+  font-size: 1em; /* Tamaño de fuente */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+  background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+
+button:disabled {
+  background-color: #ccc; /* Color gris para botones deshabilitados */
+  cursor: not-allowed; /* Cursor de no permitido */
 }
